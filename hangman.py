@@ -175,7 +175,7 @@ if __name__ == "__main__":
     while not ready:
         command_for_words = str(input("Do you have your own list of words?\n[Y]es [N]o\n"))
         if command_for_words == "Y":
-            f = open('/Users/p4sh4bsc/python_projects/hangman/words.txt')
+            f = open('./words.txt')
             for line in f:
                 list_of_words.append(line.strip())
             ready = True
